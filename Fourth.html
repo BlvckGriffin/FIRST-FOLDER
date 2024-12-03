@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <style>
+    /* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Section styles */
+.hero-title {
+  font-size: 8rem;
+}
+
+.hero-subtitle,
+.author,
+.quote,
+.list-title {
+  font-size: 2rem;
+}
+
+.text {
+  font-size: 1.8rem;
+}
+
+.social-icons {
+  font-size: 2.5rem;
+}
+
+/* Media queries */
+@media only screen and (max-width: 720px) {
+  .image-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text-with-images {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero-title {
+    font-size: 6rem;
+  }
+  .hero-subtitle,
+  .author,
+  .quote,
+  .list-title {
+    font-size: 1.8rem;
+  }
+  .social-icons {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 1.6rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#section1">Section 1</a>
+      <a class="nav-link" href="#section2">Section 2</a>
+      <a class="nav-link" href="#section3">Section 3</a>
+    </nav>
+    <img id="header-img" src="logo.png" alt="Logo">
+    
+  </header>
+
+  <section id="section1">
+    <h1 class="hero-title">Welcome to Our Product</h1>
+    <p class="hero-subtitle">Discover the best features</p>
+  </section>
+
+  <section id="section2">
+    <h2 class="author">Author Name</h2>
+    <blockquote class="quote">"This is an amazing product!"</blockquote>
+  </section>
+
+  <section id="section3">
+    <h3 class="list-title">Features</h3>
+    <ul>
+      <li class="text">Feature 1</li>
+      <li class="text">Feature 2</li>
+      <li class="text">Feature 3</li>
+    </ul>
+  </section>
+
+  <section>
+    <video id="video" controls>
+      <source src="product-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <input name="email" type="email" id="email" placeholder="Enter your email" required>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <!-- Social media icons here -->
+    </div>
+  </footer>
+</body>
+</html>

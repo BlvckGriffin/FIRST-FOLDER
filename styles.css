@@ -1,0 +1,55 @@
+
+body { background-color: rgb(6, 13, 17);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#welcome-section {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items:top;
+    background-color: #f4f4f4;
+}
+
+*{box-sizing: border-box;} 
+.about{position:relative;width: 100vw; height:92vh;
+ margin: 20px 20px 9px 20px; justify-content: center;
+background-color: gray; border-radius: 25px}
+
+.foot{text-align: center; font-size: smaller; }
+.abbackground{background-color: whitesmoke;}
+h1{text-align: center}
+
+img {width: 100vw; height: 350px; padding: 20px 25px 0 25px; border-radius: 5%} 
+.h6::first-letter {
+    font-size: 6rem;
+    color: orangered;
+    float: left;
+    margin-right: 1rem;
+  }
+.h6{color: white;}
+.friends{color: white}
+
+.Project{background-color: white}
+.submit {width: 20px; padding-right: 215px}
+
+.gallery{display: flex;flex-wrap: wrap;flex-direction: row; justify-content: center; gap: 16px;max-width: 1400px;margin: 0 auto; padding: 20px 10px;}
+
+.gallery img{width: 100%; max-width: 350px; height: 300px; object-fit: cover; border-radius: 10px;}
+.galleries{justify-content: center; display: flex; }
+.galleries img{height:250px; width: 100%;border-radius: 10px; max-width: 450px;}
